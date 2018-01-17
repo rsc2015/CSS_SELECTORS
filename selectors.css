@@ -1,0 +1,40 @@
+body{
+    background: white;
+}
+
+.container {
+    background-color: peachpuff;
+    width: 60%;
+    align-items:center; 
+    padding: 50px;
+
+
+}
+
+#main-header {
+
+}
+
+nav ul {
+    display: flex;
+    display: -webkit-flex;
+    text-decoration-style: none;
+    align-items: center;
+
+}
+
+span :disabled {
+    text-color: #eff312;
+}
+
+[class="disabled"] {
+    color: grey;
+}
+
+a[class="disabled"] {
+    color: blue;
+}
+
+[class="active"] {
+    color: yellow;
+}
