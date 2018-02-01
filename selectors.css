@@ -10,23 +10,32 @@ body{
 
 
 }
+/* 1. The header element should have a 1px border. You choose the color.*/
 
 #main-header {
-
+    border: 1px;
+    color: red;
 }
-
+/* 2. Convert the ul in the navigation element into a series of horizontal links with # as 
+the href value, without bullets, and have some space between them horizontally.*/
 nav ul {
     display: flex;
     display: -webkit-flex;
     text-decoration-style: none;
     align-items: center;
 
+
 }
+
+/* 3. Ensure that the navigation is semantically marked as such (i.e. wrap it in the correct HTML tag).*/
+
+/* 6.Section elements should be contained within an article element.*/
 
 span :disabled {
     text-color: #eff312;
 }
-
+/* 4. Any text in an element with class "disabled" should be colored grey, unless it is inside an anchor 
+tag. If inside an anchor, it should be colored purple.*/
 [class="disabled"] {
     color: grey;
 }
@@ -35,6 +44,51 @@ a[class="disabled"] {
     color: blue;
 }
 
+/* 5. Any text inside an element with a class of "active" should be colored yellow.*/
 [class="active"] {
     color: yellow;
+}
+
+/* 7. There are two missing closing tags in this document. Make sure you add them back in.*/
+
+/* 8. Make the "I'm red" text colored red.*/
+#text-red {
+    color: red;
+}
+
+/* 9. Make the "I'm blue" text colored blue.*/
+#text-blue {
+    color: blue;
+}
+
+
+/*10.The sibling h4 of the red element should have a background color of red 
+https://developer.mozilla.org/en-US/docs/Web/CSS/Adjacent_sibling_selectors adjacent sibling combinator*/
+#text-red + h4 {
+    background-color: red;
+}
+
+/* 11. The sibling h4 of the blue element should have background color of blue.*/
+#text-blue + h4 {
+    background-color: blue;
+
+}
+
+
+/* 12. Any h4 that is a direct child of grandparent should have a 1px border with rounded corners.*/
+.grandparent * h4 {
+    background-color: green;
+}
+
+
+/* 13. Elements with a class of promo should have bold text that is also colored gold.*/
+.promo {
+    font-weight: bold; 
+    color: green;
+}
+
+
+/* 14. Without adding any other attributes to the input fields in the footer, write a CSS selector that makes any text input field have a height of 25px.*/
+input {
+    height: 25px;
 }
