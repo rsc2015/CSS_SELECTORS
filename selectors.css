@@ -76,8 +76,12 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/Adjacent_sibling_selectors adja
 
 
 /* 12. Any h4 that is a direct child of grandparent should have a 1px border with rounded corners.*/
-.grandparent * h4 {
-    background-color: green;
+.grandparent > h4 {
+    border-radius:5px;
+    border-width: 1px;
+    border-color: black;
+    border-style: solid;
+
 }
 
 
